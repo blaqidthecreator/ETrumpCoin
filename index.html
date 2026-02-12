@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>$ET – The Original Trump Hair Coin</title>
+<link rel="stylesheet" href="Index.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="emoji-bg">
+  <div class="emoji" style="left:10%;">🚀</div>
+  <div class="emoji" style="left:30%;">👽</div>
+  <div class="emoji" style="left:50%;">🛸</div>
+  <div class="emoji" style="left:70%;">💎</div>
+  <div class="emoji" style="left:85%;">🏆</div>
+  <div class="emoji" style="left:95%;">🔥</div>
+</div>
+
+<section class="hero">
+  <img src="Index.png" alt="Alien Trophy" id="alien">
+  <h1><span>$ET</span><br>Same Hair. Different Galaxy.</h1>
+  <div class="subheadline">The Original Trump Hair Coin Has Landed.</div>
+  <div class="buttons">
+    <button class="btn btn-gold">Buy $ET</button>
+    <button class="btn btn-outline">View Chart</button>
+  </div>
+  <div class="contract">
+    CA: 96bk3R9WQdqxzcDFJkBMrnWJRJRhQmtmjDCktRkPpump
+    <br>
+    <button class="copy-btn" onclick="copyCA()">Copy Address</button>
+  </div>
+</section>
+
+<section class="about fade">
+  <h2>Why $ET?</h2>
+  <p>
+    From beyond the stars comes the only hair powerful enough to bend galaxies.
+    $ET isn’t just a meme. It’s interstellar dominance wrapped in gold.
+  </p>
+</section>
+
+<section class="tokenomics fade">
+  <h2>Tokenomics</h2>
+  <div class="cards">
+    <div class="card">Total Supply<br><strong>1,000,000,000</strong></div>
+    <div class="card">0% Tax</div>
+    <div class="card">LP Burned</div>
+    <div class="card">Community Owned</div>
+    <div class="card">No Team Allocation</div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2>Roadmap</h2>
+  <div class="roadmap">
+    <div class="phase">Phase 1 – Landing</div>
+    <div class="phase">Phase 2 – Galaxy Domination</div>
+    <div class="phase">Phase 3 – CEX Listings</div>
+    <div class="phase">Phase 4 – Interstellar Expansion</div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2>Join The Mission</h2>
+  <div class="socials">
+    <a href="https://x.com/ETrumpHairCoin">Twitter</a>
+    <a href="https://t.me/TrumpETofficialTG">Telegram</a>
+    <a href="https://dexscreener.com/solana/53mzL8PhAq1iVMWAiMogpocX8RpnVJhmRwcqNSjpYr1C">DEX</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 $ET – Same Hair. Different Galaxy.
+</footer>
+
+<script>
+function copyCA() {
+  navigator.clipboard.writeText("96bk3R9WQdqxzcDFJkBMrnWJRJRhQmtmjDCktRkPpump");
+  alert("Contract Address Copied!");
+}
+
+const fades = document.querySelectorAll('.fade');
+window.addEventListener('scroll', () => {
+  fades.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+
+document.addEventListener('mousemove', e => {
+  const alien = document.getElementById('alien');
+  let x = (window.innerWidth / 2 - e.pageX) / 50;
+  let y = (window.innerHeight / 2 - e.pageY) / 50;
+  alien.style.transform = `translate(${x}px, ${y}px)`;
+});
+</script>
+
+</body>
+</html>
